@@ -160,3 +160,29 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+jupyter_env/bin/datasets-cli
+jupyter_env/pyvenv.cfg
+jupyter_env/bin/activate
+jupyter_env/bin/activate.csh
+jupyter_env/bin/activate.fish
+jupyter_env/bin/convert-caffe2-to-onnx
+jupyter_env/bin/Activate.ps1
+jupyter_env/bin/convert-onnx-to-caffe2
+jupyter_env/bin/f2py
+jupyter_env/bin/get_gprof
+jupyter_env/bin/get_objgraph
+jupyter_env/bin/huggingface-cli
+jupyter_env/bin/isympy
+jupyter_env/bin/normalizer
+jupyter_env/bin/numpy-config
+jupyter_env/bin/pip
+jupyter_env/bin/pip3
+jupyter_env/bin/pip3.12
+jupyter_env/bin/python
+jupyter_env/bin/python3
+jupyter_env/bin/python3.12
+jupyter_env/bin/torchrun
+jupyter_env/bin/tqdm
+jupyter_env/bin/transformers-cli
+jupyter_env/bin/undill
+jupyter_env/share/man/man1/isympy.1
