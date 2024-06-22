@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from transformers import PreTrainedModel, BertModel, RobertaModel, ViTModel
-from torchvision.models import resnet50
+from torchvision.models import resnet50, ResNet50_Weights
 from .config import MultimodalConfig
 
 class MultimodalModel(PreTrainedModel):
@@ -11,9 +11,9 @@ class MultimodalModel(PreTrainedModel):
         super().__init__(config)
         
         # Vision models
-        self.resnet1 = resnet50(pretrained=True)
+        self.resnet1 = resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
         self.resnet1 = nn.Sequential(*list(self.resnet1.children())[:-1])
-        self.resnet2 = resnet50(pretrained=True)
+        self.resnet2 = resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
         self.resnet2 = nn.Sequential(*list(self.resnet2.children())[:-1])
         
         # Text models
